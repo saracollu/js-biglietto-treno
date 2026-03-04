@@ -15,13 +15,18 @@ variabili esterne -> costo al km
 
 let age = Number(prompt('Quanti anni hai?'))
 let km = Number(prompt('Quale distanza devi percorrere?'))
+let costForKm = 0.21
 /* blocchi IF ELSE */
 
 /* if age<18 20%off*/
 if (age < 18) {
-    const cost = ((0.21 * km) - 20%)
-
+    let prezzo = (costForKm * km - (20 / 100))
+    console.log (prezzo)
 } else if (age > 65) {
-    const cost = ((0.21 * km) - 40%)
+    let prezzo = (costForKm * km - (40 / 100))
+    console.log(prezzo)
+} else if (18 > age < 65) {
+    let prezzo = (costForKm * km)
+    console.log(prezzo)
 }
 /*if age>65 40%off*/
