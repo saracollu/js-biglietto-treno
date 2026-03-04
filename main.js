@@ -12,12 +12,14 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 /*
 variabili esterne -> costo al km
 */
-const cost = (0,21 * km)
-const age = Number(prompt('Quanti anni hai?'))
-const km = Number(prompt('Quale distanza devi percorrere?'))
+
+let age = Number(prompt('Quanti anni hai?'))
+let km = Number(prompt('Quale distanza devi percorrere?'))
 /* blocchi IF ELSE */
 
 /* if age<18 20%off*/
+if (age < 18) {
+    const cost = ((0,21 * km) - 20%)
 
-
+} else if 
 /*if age>65 40%off*/
