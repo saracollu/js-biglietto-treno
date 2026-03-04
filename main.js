@@ -19,7 +19,9 @@ let km = Number(prompt('Quale distanza devi percorrere?'))
 
 /* if age<18 20%off*/
 if (age < 18) {
-    const cost = ((0,21 * km) - 20%)
+    const cost = ((0.21 * km) - 20%)
 
-} else if 
+} else if (age > 65) {
+    const cost = ((0.21 * km) - 40%)
+}
 /*if age>65 40%off*/
