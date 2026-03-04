@@ -22,11 +22,14 @@ let costForKm = 0.21
 if (age < 18) {
     let prezzo = (costForKm * km - (20 / 100))
     console.log (prezzo)
+    document.getElementById("prezzoPrint").innerText = prezzo
 } else if (age > 65) {
     let prezzo = (costForKm * km - (40 / 100))
     console.log(prezzo)
+    document.getElementById("prezzoPrint").innerText = prezzo
 } else if (18 > age < 65) {
     let prezzo = (costForKm * km)
     console.log(prezzo)
+    document.getElementById("prezzoPrint").innerText = prezzo
 }
 /*if age>65 40%off*/
